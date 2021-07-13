@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>KORAIL</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- bxslider css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- 개인 css -->
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="main.css/main.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- app icon -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="app_icon.png">
+    <!-- company영역 hover제어 css -->
+    <link rel="stylesheet" href="main.css/set1.css">
+    <!-- aos css-->
+    <link rel="stylesheet" href="main.css/aos.css">
+    <!-- bxslider -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- aos js-->
+    <script src="main.js/aos.js"></script>
+    <!-- 개인 js -->
+    <script src="common/js/common.js"></script>
+    <script src="main.js/main.js"></script>
+    <script src="main.js/tab.js"></script>
+    <!-- 팝업js -->
+    <script src="main.js/mainpopup.js"></script>
+    <!-- bxslider 내부스크립트-->
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider({
+                auto: true,
+                autoControls: false,
+                stopAutoOnClick: false,
+                pager: true,
+                slideWidth: 600
+            }, 4000);
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_inner">
+                <div class="header_top">
+                    <h1 id="logo"><a href="index.html"><img src="common/images/header_logo.png" alt="로고 이미지"></a>
+                    </h1>
+                    <div class="header_icon">
+                        <span class="search_icon">검색 아이콘</span>
+                        <span class="sitemap_icon">사이트맵 아이콘</span>
+                        <span class="login_icon">로그인 아이콘</span>
+                    </div>
+                </div>
+                <div class="header_bottom">
+                    <nav id="gnb">
+                        <ul class="main_gnb">
+                            <li><a class="depth1" href="../sub1/sub1_1.html">코레일소개</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../sub1/sub1_1.html">공사소개</a></li>
+                                    <li><a href="../sub1/sub1_2.html">CEO</a></li>
+                                    <li><a href="../sub1/sub1_3.html">경영전략</a></li>
+                                    <li><a href="../sub1/sub1_4.html">인재채용</a></li>
+                                    <li><a href="../sub1/sub1_5.html">공지사항</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="depth1"  href="../sub2/sub2_1.html">정보공개</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../sub2/sub2_1.html">정보공개제도</a></li>
+                                    <li><a href="../sub2/sub2_2.html">사전정보공표</a></li>
+                                    <li><a href="https://gksqlcch.cafe24.com/g5/bbs/board.php?bo_table=company_g5">사업실명제</a></li>
+                                    <li><a href="../sub2/sub2_4.html">자료실</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="depth1"  href="../sub3/sub3_1.html">업무지원</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../sub3/sub3_1.html">사업분야</a></li>
+                                    <li><a href="https://win-win.korail.com/">철도상생플랫폼</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">승차권이용</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="#">기차역/노선도</a></li>
+                                    <li><a href="#">승차권선택</a></li>
+                                    <li><a href="#">자유여행</a></li>
+                                    <li><a href="#">패키지상품</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">종합안내</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="#">할인 및 운임안내</a></li>
+                                    <li><a href="#">코레일 멤버십</a></li>
+                                    <li><a href="#">고객서비스</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="gnb_box"></div>
+        </header>
+        <section id="container">
+            <div class="ct_inner">
+                <h2 class="hidden">컨텐츠 영역</h2>
+                <article id="visual">
+                    <h3 class="hidden">visual 영역</h3>
+                    <div class="visual_inner">
+                        <div class="slider">
+                            <div class="bxslider">
+                                <a href="#"><img src="images/visual_slide_img.png" alt="슬라이드이미지1"></a>
+                                <a href="#"><img src="images/visual_slide_img2.png" alt="슬라이드이미지2"></a>
+                                <a href="#"><img src="images/visual_slide_img.png" alt="슬라이드이미지1"></a>
+                                <a href="#"><img src="images/visual_slide_img2.png" alt="슬라이드이미지2"></a>
+                            </div>
+                            <div class="progressbar shadow">
+                                <div class="progress embossed" id="progress"></div>
+                            </div>
+                        </div>
+                        <div class="visual_ct">
+                            <div class="weather">
+                                <div class="weather_img"><img src="images/cloud.png" alt="구름 이미지"> </div>
+                                <div class="weather_txt"><span>송파구</span>맑음 26℃</div>
+                            </div>
+                            <div class="ticket">
+                                <div class="ticket_button">
+                                    <a href="javascript:void(0)" class="active ticketing_btn">승차권 예매</a>
+                                    <a href="javascript:void(0)" class="searching_btn">기차여행검색</a>
+                                </div>
+                                <form method="post" class="ticket_tab ticketing">
+                                    <div>
+                                        출발역
+                                        <input type="search" name="departure"><br>
+                                        도착역
+                                        <input type="search" name="arrive"><br>
+                                        날짜
+                                        <input type="datetime-local" name="date"><br>
+                                        시간
+                                        <input type="time" name="time"><br>
+                                        인원
+                                        <input type="number" name="people">
+                                    </div>
+                                    <button>확인</button>
+                                </form>
+                                <form method="post" class="ticket_tab searching">
+                                    <div class="trip_theme">
+                                        여행테마
+                                        <select name="theme">
+                                            <option>전체</option>
+                                            <option>관광지</option>
+                                            <option>숙박</option>
+                                            <option>체험</option>
+                                            <option>교통</option>
+                                            <option>쇼핑</option>
+                                            <option>음식</option>
+                                            <option>기타</option>
+                                        </select>
+                                    </div>
+                                    <div class="trip_local">
+                                        여행지역
+                                        <select name="local">
+                                            <option>전체</option>
+                                            <option>수도권</option>
+                                            <option>강원권</option>
+                                            <option>충청권</option>
+                                            <option>경상권</option>
+                                            <option>전라권</option>
+                                            <option>제주권</option>
+                                        </select>
+                                    </div>
+                                    <div class="trip_date">
+                                        출발일
+                                        <input type="datetime-local" name="date" ><br>
+                                        상품명
+                                        <input type="search" name="product_name">
+                                        <button>기차여행검색</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="visual_quick_menu">
+                            <ul>
+                                <li><a href="#"><img src="images/quick_icon_train.png"
+                                            alt="기차이미지"><br>자유여행<br><br>패스</a></li>
+                                <li><a href="#"><img src="images/quick_icon_railtel.png"
+                                            alt="레일텔이미지"><br>렌터카<br><br>레일텔</a></li>
+                                <li><a href="#"><img src="images/quick_icon_search.png"
+                                            alt="미등록이미지"><br>미등록<br><br>조회</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article id="info">
+                    <h3 class="info_tit">사람ㆍ세상ㆍ미래를 잇는 대한민국 철도 KORAIL</h3>
+                    <div class="info_button">
+                        <a href="javascript:void(0)" class="on bt1">이벤트</a>
+                        <a href="jacascript:void(0)" class="bt2">공지사항</a>
+                    </div>
+                    <div class="tab info_event">
+                        <ul class="info_event_box">
+                            <!--ul,li바꾸기 -->
+                            <li class="eventbox b1"><a
+                                    href="https://www.letskorail.com/ebizcom/event/total/EbizcomEventTotallw_cus06101_detail.do?searchKeyword2=1901">
+                                    <pre>
+<span class="e1">PAYCO X KORAIL</span>
+
+코레일 승차권 
+페이코 포인트로 결제하고
+페이코 포인트 받으세요!
+
+21.04.15(목) ~ 05.31(월)
+</pre>
+                                </a></li>
+                            <li class="eventbox b2"><a
+                                    href="https://www.letskorail.com/ebizcom/event/total/EbizcomEventTotallw_cus06101_detail.do?searchKeyword2=1841">
+                                    <pre>
+<span class="e1">한국철도 관광상품</span> 
+<span class="e2">
+정부의 5인이상 집합 금지명령에 따른
+일부 관광상품 운영중지 알림</span>
+
+5대벨트열차,경북관광테마열차,바다열차 등..
+
+20.12.23(수) ~ 별도 공지일까지
+</pre>
+                                </a></li>
+                            <li class="eventbox b3"><a
+                                    href="https://www.letskorail.com/ebizcom/event/total/EbizcomEventTotallw_cus06101_detail.do?searchKeyword2=1906">
+                                    <pre>
+<span class="e1"> KTX 이용고객</span> <span class="e3">8억명</span> <span class="e1">돌파 기념!</span>
+
+한국철도 전 국민기부 걷기 챌린지 
+
+‘21.05.01(토) ~ 05.31(월)’
+우리 함께 걸어요
+</pre>
+                                </a></li>
+                            <li class="eventbox b4"><a
+                                    href="https://www.letskorail.com/ebizcom/event/total/EbizcomEventTotallw_cus06101_detail.do">
+                                    <pre>
+<span class="e1">네이버, 카카오
+승차권 구매 서비스 시행</span>
+
+철도 회원가입 없이, 코레일톡을
+설치하지 않아도 네이버, 카카오
+회원이라면 누구나 편리하게 구매 가능
+
+21.02.01(월) 오전 10시 ~
+</pre>
+                                </a></li>
+                            <li class="eventbox b5"><a
+                                    href="https://www.letskorail.com/ebizcom/event/tourist/EbizcomEvtTourWcus06701_detail.do">
+                                    <pre>
+<span class="e1">관광 이벤트</span>
+<span class="e2">[내일로 두번째 이야기]</span> 
+
+섬 여행을 무료로 즐기자!
+
+1. 2020.11.9(월) ~ 11.30(월)
+2. 2020.07.20(월) ~ 연중
+</pre>
+                                </a></li>
+                            <li class="eventbox b6"><a
+                                    href="https://www.letskorail.com/ebizcom/event/total/EbizcomEventTotallw_cus06101_detail.do">
+                                    <pre>
+<span class="e1"> 타임세이빙 서비스(TSS) 중단
+</span>
+코레일 톡(안드로이드 환경)
+타임세이빙 서비스는
+구글 안드로이드의 운영정책으로 인해
+운영 중지 예정이오니,
+이용에 참고하시기 바랍니다.
+
+21.06.25(금) ~
+</pre>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="tab info_notice">
+                        <ul class="info_notice_box">
+                            <li class="noticebox b1"><a
+                                    href="https://www.letskorail.com/ebizcom/event/total/EbizcomEventTotallw_cus06101_detail.do">
+                                    <pre>
+ <span class="nt1">공지</span>
+
+ <span class="nt2">자유석 운영열차 조정시행</span>
+
+자유석 운영을 아래와 같이
+조정하니 이용에 참고 바랍니다.
+
+
+
+21.05.24(월) ~ 별도공지까지
+
+</pre>
+                                </a></li>
+                            <li class="noticebox b2"><a
+                                    href="https://www.letskorail.com/ebizcom/event/total/EbizcomEventTotallw_cus06101_detail.do">
+                                    <pre>
+ <span class="nt1">공지</span>
+
+ <span class="nt2">경북선 운행중지 알림</span>
+
+경북선 어등역 인근 수로박스
+신설공사 관련 안전 확보를 위해
+김천 ~ 영주 간 무궁화호를 운행중지하고
+대체버스를 운행함을 알려드립니다.
+
+21.05.01(토) ~ 
+[김천~영주 간 무궁화호 10회]
+(1801~1810 열차)
+
+</pre>
+                                </a></li>
+                            <li class="noticebox b3"><a
+                                    href="https://www.letskorail.com/ebizcom/event/total/EbizcomEventTotallw_cus06101_detail.do">
+                                    <pre>
+ <span class="nt1">공지</span>
+
+ <span class="nt2">우리은행 서비스 일시중지 알림</span>
+
+우리은행 (계좌이체, 간편현금결제 등)
+서비스가 전산시스템 정기정검으로 인해
+결제 서비스가 일시중지 됩니다.
+
+
+21.05.09(일) 02:00~06:00
+</pre>
+                                </a></li>
+                            <li class="noticebox b4"><a
+                                    href="http://info.korail.com/mbs/www/jsp/board/view.jsp?spage=1&boardId=9863175&boardSeq=15032237&mcategoryId=&id=www_011201000000">
+                                    <pre>
+ <span class="nt3">채용공고</span>
+
+ <span class="nt2">한국철도공사 위촉연구원 공개모집</span>
+
+한국철도공사 연구원에서는 2021년도
+국가R&D 과제를 수행할 열정과 능력을
+갖춘 위촉연구원을 채용하고자 하니,
+많은 응모 바랍니다.
+
+21.05.11(화)
+한국철도공사 연구원장
+</pre>
+                                </a></li>
+                            <li class="noticebox b5"><a
+                                    href="http://info.korail.com/mbs/www/jsp/board/view.jsp?spage=1&boardId=9863175&boardSeq=15025323&mcategoryId=&id=www_011201000000">
+                                    <pre>
+ <span class="nt3">채용공고</span>
+
+ <span class="nt2">한국철도공사 임원 공개모집</span>
+
+한국철도공사에서
+전문성과 역량을 갖춘
+임원을 모십니다.
+
+
+21.03.31(수)
+한국철도공사 임원추천위원회
+</pre>
+                                </a></li>
+                            <li class="noticebox b6"><a
+                                    href="http://info.korail.com/mbs/www/jsp/board/view.jsp?spage=1&boardId=9863175&boardSeq=15017548&mcategoryId=&id=www_011201000000">
+                                    <pre>
+ <span class="nt3">채용공고</span>
+
+ <span class="nt2">2021년 상반기 신입사원 공개모집</span>
+
+2021년 상반기 한국철도공사 신입사원 및
+체험형 인턴을 다음과 같이 모집하오니
+많은 지원 바랍니다.
+
+공모 분야: 사무영업 분야 등
+채용인원 : 870명
+*체험형인터 750명 별도
+</pre>
+                                </a></li>
+                        </ul>
+                    </div>
+                </article>
+                <article id="company">
+                    <h3 class="hidden">회사소개</h3>
+                    <div class="company_tit">
+                        <img src="images/company_title.png" alt="korail is">
+                        <div class="korail_ct">
+                            <img src="images/company_title02.png" alt="회사 타이틀 이미지">
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <figure class="effect-oscar cb1" data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" data-aos-duration ="1500">
+                            <img src="images/company01.png" alt="img01" />
+                            <figcaption>
+                                <h2>KORAIL<span>MISSION</span></h2>
+                                <p>사람·세상·미래를 잇는<br>대한민국 철도</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-oscar cb2" data-aos="fade-left"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" data-aos-duration ="1500">
+                            <img src="images/company02.png" alt="img01" />
+                            <figcaption>
+                                <h2>KORAIL<span>VISION</span></h2>
+                                <p>대한민국의 내일<br>국민의 코레일</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-oscar cb3" data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" data-aos-duration ="1500">
+                            <img src="images/company03.png" alt="img01" />
+                            <figcaption>
+                                <h2>KORAIL <span>VALUE</span></h2>
+                                <p>안전[국민안전|안전역량]<br>고객[고객만족|직원행복]<br>소통[국민소통|노사상생]
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-oscar cb4" data-aos="fade-left"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" data-aos-duration ="1500">
+                            <img src="images/company04.png" alt="img01" />
+                            <figcaption>
+                                <h2>KORAIL <span>POLICY</span></h2>
+                                <p>안전한 철도, 편리한 철도<br>국민의 철도, 미래의 철도 </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </article>
+                <article id="award">
+                    <h3 class="award_tit ctit">코레일은 꾸준히 성장합니다.</h3>
+                    <div class="award_wrap">
+                        <div class="award_box">
+                            <div class="awards">
+                                <ul>
+                                    <li><img src="images/award_img_txt01.png" alt="소비자중심경영"></li>
+                                    <li><img src="images/award_img_txt02.png" alt="공정거래위원회"></li>
+                                    <li><img src="images/award_img_txt03.png" alt="부패방지시책평가"></li>
+                                    <li><img src="images/award_img_txt04.png" alt="지속가능성지수"></li>
+                                    <li><img src="images/award_img_txt05.png" alt="인터넷소통대상"></li>
+                                    <li><img src="images/award_img_txt06.png" alt="품질분임조경진대회"></li>
+                                    <li><img src="images/award_img_txt07.png" alt="국가브랜드"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="award_btn">
+                            <a href="javascript:void(0)" class="lft btn"> 왼쪽버튼 </a>
+                            <a href="javascript:void(0)" class="rgt btn"> 오른쪽버튼 </a>
+                        </div>
+                    </div>
+                </article>
+                <article id="sns">
+                    <h3 class="sns_tit ctit">코레일은 다양한 컨텐츠로 소통합니다.</h3>
+                    <ul class="sns_box">
+                        <li><a href="https://www.facebook.com/KoreaRailroad/photos/pcb.3996943670391619/3996942633725056/?type=3&__tn__=HH-R&eid=ARCSr9CmibZXTjRRzWWM5CpuTSnHekGXHCxABuBgMRH8kAMQRfxbG9GcN2UFrlcRSM2G3GL1_EWMpx2k&__xts__%5B0%5D=68.ARDV6Gvhobr5ZBeEcjdL9w3rBT_6Rtn9j4rstQvq51qd1fBUTVv4tqNkVh727BPDHborYXxkTGfRghGbuepe6L3nzaWC2l5Xscg7TtgV3oMmT1AYAJ5jc1c6B1nkNW1yGCYMefWnq11V9K11H36KiRBEiodV7mMnLfzQssXpFEeiif-IRE_zu1r_mUOMnO4Yuk5Tm6AWWgSnL6YE5EjW7kbF02NgG7z3PxYjhqo3OAszUeoc6z03kNvKkkk56jBBjo50XzWtFSZIUZjEvi0isW1TtwJ1sPxKdyDLklS9r8dEFRUEq3PBaw"
+                                class="sns_facebook">
+                                <pre><span>철도대형사고 실제훈련시행</span><br>
+인명구조 및 2차사고 예방에 중점을 둔
+철도 재난대비 비상대응 훈련을 시행했습니다.
+
+#국토교통부 #영주시 #국가철도공단
+
+</pre>
+                            </a></li>
+                        <li><a href="https://youtu.be/Shr1vILA5zk" class="sns_youtube">
+                                <pre><span>[한국철도 TV]</span><br>
+한국철도의 선임전기장을 아시나요?
+
+선임전기장의 땀 흘리는 하루가 있기에
+오늘도 철도는 안전합니다.
+
+#선임전기장 #동탄신호제어사업소
+
+</pre>
+                            </a></li>
+                        <li><a href="https://www.instagram.com/p/CNhfFo3nBTl/" class="sns_insta">
+                                <pre><span>*마스크 착용 필수*</span><br>
+한국철도(코레일)는 국토교통부
+철도특별사범경찰대와 함께
+수도권전철 내 마스크 착용과
+질서유지를 위한 특별합동단속을
+시행하고 있습니다.
+
+#철도특별사범경찰대 #특별합동단속
+</pre>
+                            </a></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="footer_inner">
+                <div class="footer_top">
+                    <ul>
+                        <li><a href="https://info.korail.com/mbs/www/subview.jsp?id=www_050701000000">고객서비스헌장</a></li>
+                        <li><a
+                                href="https://info.korail.com/mbs/www/jsp/board/list.jsp?boardId=9863262&id=www_040200000000">보도자료</a>
+                        </li>
+                        <li><a
+                                href="https://www.letskorail.com/ebizcom/cs/terms/stipulation/EbizcomCsStipulationsw_pol01900.do">홈페이지이용약관</a>
+                        </li>
+                        <li><a href="https://info.korail.com/mbs/www/subview.jsp?id=www_070100000000">여객운송약관/부속약관</a>
+                        </li>
+                        <li><a href="https://info.korail.com/mbs/www/subview.jsp?id=www_060101000000">정보공개</a></li>
+                        <li><a
+                                href="https://www.letskorail.com/ebizcom/cs/terms/privates/EbizcomCsPrivatesw_pol01600.do">개인정보처리방침</a>
+                        </li>
+                        <li><a
+                                href="https://www.letskorail.com/ebizcom/cs/terms/email/EbizcomCsEmailw_pol01300.do">이메일무단수집거부</a>
+                        </li>
+                        <li><a href="https://www.letskorail.com/ebizcom/ad/process.do">광고안내</a></li>
+                        <li><a href="https://info.korail.com/mbs/www/subview.jsp?id=www_070400000000">저작권정책</a></li>
+                        <li><a
+                                href="https://www.letskorail.com/ebizprd/EbizPrdComKo81111_i1.do?strContrbGrpCd=2007031901&strPgDiv=lvSub">러브포인트</a>
+                        </li>
+                        <li><a href="map/map.html">찾아오시는길</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom_left">
+                        <a href="index.html"><img src="common/images/footer_logo.png" alt="로고이미지"></a>
+                    </div>
+                    <div class="footer_bottom_center">
+                        <address>
+                            <span class="footer_txt_set"> 대표자: 손병석 상호: 한국철도공사 사업자등록: 314-82-10024</span>
+                            <br>통신판매업신고: 대전 동구-0233호 주소: 34618 대전광역시 동구 중앙로 240
+                        </address>
+                        <p>
+                            대표전화 1544-7788 팩스번호 02-361-8385<br>
+                            COPYRIGHT ⓒ 2016 By KOREA RAILROAD. ALL RIGHT RESERVED.
+                        </p>
+                    </div>
+                    <div class="footer_bottom_right">
+                        <div class="select">
+                            <a href="#" class="arrow">Family Site</a>
+                            <ul class="family_site">
+                                <li><a href="http://www.ktxmagazine.com/pages/story/WA/index?entrId=ktx&last=Y"
+                                        target="_blank">KTX매거진</a></li>
+                                <li><a href="https://win-win.korail.com/" target="_blank">철도상생플랫폼</a></li>
+                                <li><a href="http://www.korailwebzine.com/pages/story/MP/index?entrId=korail&last=Y"
+                                        target="_blank">한국철도사보</a></li>
+                                <li><a href="https://logis.korail.go.kr/index.do" target="_blank">물류정보서비스</a></li>
+                                <li><a href="https://info.korail.com/mbs/www/subview.jsp?id=www_030502000000"
+                                        target="_blank">윤리경영</a></li>
+                                <li><a href="https://ebid.korail.com/" target="_blank">전자조달시스템</a></li>
+                                <li><a href="http://railroadmuseum.co.kr/" target="_blank">철도박물관</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- top 버튼 -->
+        <div class="top_btn">
+            <a href="javascript:void(0)"><img src="common/images/top_btn.png" alt="top버튼"></a>
+        </div>
+    </div>
+    <!-- 팝업창 아래 코딩,내부스크립트 + 윗쪽에 mainpopup.js 연결 -->
+    <div id="showimage" style="position:absolute; top: 150px; left: 0px;z-index: 110; width:322px; height: 322px;">
+        <div class="pop_img"><img src="popup/images/POP.png"
+                alt="상업적 목적이 아닌 개인 포트폴리오 용도로 제작되었다는 의미가 담긴 이미지 그 출처가 따로 있음을 밝힌다."></div>
+        <form style="font-size: 12px; text-align: center; color: #666;">
+            <input type="checkbox" id="Notice" name="Notice" title="오늘은 이창을 열지 않음 선택 상자">
+            <label for="Notice">오늘은 이창을 열지 않음.</label>
+            <a href="#" onclick="closewin();hidebox();return false;">[close]</a>
+        </form>
+        <script>
+            function closewin() {
+                let chk = document.getElementById("Notice")
+                if (chk.checked) {
+                    setCookie("Notice", "done", 1); //날짜부분
+                }
+            }
+            if (getCookie("Notice") == "done") {
+                hidebox();
+            }
+        </script>
+    </div>
+    <!-- aos js -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

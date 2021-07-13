@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* section#container */
+#container{width: 100%; font-family: 'Nanum Gothic', sans-serif;}
+#container>.ct_inner{width:100%; margin-top: 135px; background-image: url(../images/sub_top_bg.png);background-position: 0 center;  background-repeat: no-repeat;}
+#container>.ct_inner>.sub_top{width: 1280px; height: 320px; margin: 0 auto;}
+#container>.ct_inner>.sub_top>h3.sub_tit{padding-top: 155px; font-size: 50px; font-weight:bold; color: white; text-shadow: 2px 2px 5px rgb(131, 131, 131);}
+#container>.ct_inner>.sub_top>ul.depth02{overflow: hidden; width: 600px; height: 30px; margin: 0 auto; margin-top: 75px;}
+#container>.ct_inner>.sub_top>ul.depth02>li{overflow: hidden; float: left; width: 200px; height: 30px;}
+#container>.ct_inner>.sub_top>ul.depth02>li:hover>a{border-bottom: 2px solid rgb(0, 195, 255); color: #fff;  text-shadow: 2px 2px 5px #000}
+#container>.ct_inner>.sub_top>ul.depth02>li>a{display: block; width: 150px; height: 28px; color: #fff; text-shadow: 2px 2px 2px #000; font-size: 20px; text-align: center; line-height: 28px; font-weight:700;}

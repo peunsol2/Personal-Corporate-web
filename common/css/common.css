@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/* base(reset) */
+body,input,textarea,select,button,table,pre{font-family: 'Noto Sans KR', sans-serif;font-weight:300; font-size:12px; color: #333;}
+*{margin:0;padding:0}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+ul,ol,li{list-style:none;}
+fieldset,img{border:0; vertical-align:top;}
+address{font-style:normal;}
+/* 어드레스는 쓰면 기울어져서(이탤릭) 나오기때문에 normal설정해준다. */
+table{border-collapse: collapse;}
+header,footer,nav,section,article,hgroup,aside{display: block;}
+/* 혹시 html5이전버전 사용시 인라인으로 인식하기 때문에 블럭으로 한번더 강제적으로 변환해서 작업한다. */
+p,li,dd{line-height: 1.5em; text-align: justify;}
+.hidden{position: absolute; width: 1px; height: 1px; overflow: hidden;left: -1000%; color: #fff;}
+/* a-style */
+a{color:#333;text-decoration:none;}
+a:hover,a:active,a:focus{color:#333;text-decoration:none;}
+/* skipNav */
+#skip_nav{position:relative; width:100%;overflow:hidden;}
+#skip_nav a{display:block; height:1px; margin-bottom:-1px;overflow:hidden; text-align:center; text-decoration:none; color:#333;font-size:12px;}
+#skip_nav a:hover,#skip_nav a:focus,#skip_nav a:active{
+display:block;height:auto;padding:5px 0; background:#f2f2f2;}
+
+/* layout */
+#wrap{overflow: hidden; width: 100%;}
+#header{position: fixed; z-index:100; width:100%; height: 135px;background-color: #064199;;}
+#footer{width:100%; height: 160px; background-color: #6b6b6b;}
+
+/*#header*/
+.header_inner{position:relative; width: 1280px; margin: 0 auto;}
+.header_inner>.header_top{height: 90px;}
+.header_inner>.header_top>#logo{width: 250px; height: 100px; margin:0 auto;}
+.header_inner>.header_top>#logo>a{display: block; width: 250px; height: 100px;}
+.header_inner>.header_top>#logo>a>img{display: block; width: 100%;}
+.header_inner>.header_top>.header_icon{position:absolute; top: 12px; right: 0px;}
+.header_inner>.header_top>.header_icon>span{display: inline-block;text-indent: -9999px; width: 25px; height: 25px;background-repeat: no-repeat;}
+.header_inner>.header_top>.header_icon .search_icon{ background-image: url(../images/search_icon.png);}
+.header_inner>.header_top>.header_icon .search_icon:hover{background-image: url(../images/ho_search_icon.png);}
+.header_inner>.header_top>.header_icon .sitemap_icon{margin-left: 5px;background-image: url(../images/sitemap_icon.png);}
+.header_inner>.header_top>.header_icon .sitemap_icon:hover{background-image: url(../images/ho_sitemap_icon.png);}
+.header_inner>.header_top>.header_icon .login_icon{ background-image: url(../images/login_icon.png);}
+.header_inner>.header_top>.header_icon .login_icon:hover{background-image: url(../images/ho_login_icon.png);}
+
+.header_inner>.header_bottom{height: 45px;}
+#gnb{width:600px; margin:0 auto;}
+#gnb>.main_gnb{overflow: hidden; width: 600px;}
+#gnb>.main_gnb>li{float: left;}
+#gnb>.main_gnb>li>a{display: block; width: 120px; height: 45px; text-align:center; line-height: 45px; color: #fff; font-size: 18px;}
+#gnb>.main_gnb>li>a:hover{font-size: 19px;}
+
+#gnb .main_gnb .sub_gnb{display: none;}
+#gnb .main_gnb .sub_gnb>li{ width: 120px; height: 40px;}
+#gnb .main_gnb .sub_gnb>li:hover{background-color: #fff;}
+#gnb .main_gnb .sub_gnb>li>a{display: block; width: 120px; height: 40px; line-height: 40px; text-align:center;font-size: 15px; color: #fff;}
+#gnb .main_gnb .sub_gnb>li:hover>a{color:#000;}
+#header .gnb_box{display: none; width: 100%; height: 200px;border-bottom: 3px solid #fff; background-color: #2766cc;}
+
+/* #footer */
+#footer>.footer_inner{width: 1280px; height: 160px; margin: 0 auto;}
+#footer>.footer_inner>.footer_top{width:100%; height: 40px; padding-top: 5px; box-sizing: border-box;}
+#footer>.footer_inner>.footer_top>ul{overflow: hidden;width: 1055px; margin: 0 auto;}
+#footer>.footer_inner>.footer_top>ul>li{float: left; margin-top: 6px; padding:0 12px; border-right: 1px solid #ccc;}
+#footer>.footer_inner>.footer_top>ul>li:first-child{padding-left: 0px;}
+#footer>.footer_inner>.footer_top>ul>li:last-child{padding-right: 0px; border-right:none;}
+#footer>.footer_inner>.footer_top>ul>li>a{display: block;height: 23px; line-height: 23px; text-align: center; color: #ccc;}
+#footer>.footer_inner>.footer_top>ul>li>a:hover{color: #fff;}
+#footer>.footer_inner>.footer_bottom{position: relative; height: 120px;}
+
+
+#footer>.footer_inner>.footer_bottom>.footer_bottom_left{float: left; width: 300px; height: 120px; padding-left: 50px;}
+#footer>.footer_inner>.footer_bottom>.footer_bottom_left>a{display: block; width: 100%;}
+#footer>.footer_inner>.footer_bottom>.footer_bottom_left>a>img{display: block; width: 100%;}
+
+
+#footer>.footer_inner>.footer_bottom>.footer_bottom_center{float: left; width: 500px; height: 120px; margin-left: 150px;}
+#footer>.footer_inner>.footer_bottom>.footer_bottom_center>address{color: #fff; margin-top: 20px;}
+#footer>.footer_inner>.footer_bottom>.footer_bottom_center>address>span.footer_txt_set{font-weight: 400;}
+#footer>.footer_inner>.footer_bottom>.footer_bottom_center>p{color: #fff;}
+
+
+
+#footer>.footer_inner>.footer_bottom>.footer_bottom_right{position: absolute; bottom:50px; right:100px; width: 150px; height: 25px; box-sizing: border-box}
+#footer>.footer_inner>.footer_bottom>.footer_bottom_right>.select{position: relative; width: 150px;height: 25px; border: 1px solid #ccc;}
+#footer>.footer_inner>.footer_bottom>.footer_bottom_right>.select>a.arrow{display: block; width: 150px; height: 25px;color: rgb(218, 218, 218); text-align:center; line-height: 25px; background-image: url(../images/down.svg); background-repeat: no-repeat; background-position: right 0;}
+#footer>.footer_inner>.footer_bottom>.footer_bottom_right>.select>.family_site{display: none; overflow: hidden; position: absolute; top:-175px; width: 150px;}
+#footer>.footer_inner>.footer_bottom>.footer_bottom_right>.select>.family_site>li{ overflow: hidden; width: 150px; height: 25px; background-color: #fff;}
+#footer>.footer_inner>.footer_bottom>.footer_bottom_right>.select>.family_site>li>a{display: block; width: 150px; height: 25px; text-align:center; line-height: 25px;}
+#footer>.footer_inner>.footer_bottom>.footer_bottom_right>.select>.family_site>li:hover>a{background-color: #ccc; color: #000;}
+
+/* .top_btn */
+.top_btn{display: none; position: fixed; top:80%; right: 4%;}

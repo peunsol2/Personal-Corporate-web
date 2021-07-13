@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* section#container */
+#container{width: 100%; font-family: 'Nanum Gothic', sans-serif;}
+#container>.ct_inner{width: 100%; margin-top: 90px; background-image: url(../images/map_top_bg.png);background-position: top center;  background-repeat: no-repeat;}
+#container>.ct_inner>.sub_top{width: 1280px; height: 320px; margin: 0 auto;}
+#container>.ct_inner>.sub_top>h3.sub_tit{padding-top: 155px; font-size: 50px; font-weight:bold; color: white; text-shadow: 2px 2px 5px rgb(131, 131, 131);}
+
+/* #container .gnb_road */
+#container .gnb_road{width: 1280px; height: 50px; margin: 0 auto;border-bottom: 1px solid rgb(141, 141, 141);}
+#container .gnb_road>a{float: left; display: block; height: 50px;}
+#container .gnb_road>a>img{display: block; margin-top: 5px;}
+#container .gnb_road>span{display: inline-block; margin-left: 30px;  line-height: 50px; font-size: 22px;}
+
+/*#container .ct_top*/
+.ct_top{position: relative; width: 1280px;height:140px; margin:0 auto; padding-top: 80px; box-sizing: border-box;}
+.ct_top>.ct_line{width: 2px; height: 20px; background-color: #666; margin: 0 auto;}
+.ct_top>h3.ct_tit{width: 200px; height: 40px; margin: 0 auto;text-align: center; line-height: 40px;font-size: 30px; font-weight: bold;}
+
+ #map{width: 600px; height: 600px; margin-top: 100px; margin-bottom: 150px;}
+ .ct_top>.map_txt{position: absolute; top: 200px; right: 0px; width: 500px; height: 650px; padding:25px; box-sizing: border-box; border-radius: 50px; background-color: rgb(226, 239, 255);}
+ .ct_top>.map_txt>pre{}
+ .ct_top>.map_txt>pre>span.map_t{display: block; width:300px; text-align: center; font-size: 15px; margin:0 auto;}
+ .ct_top>.map_txt>pre>span.map_t02{font-size: 15px; font-weight: 500;}
+ .ct_top>.map_txt>pre>span.map_t03{font-size: 14px; font-weight: 400;}
+ .ct_top>.map_txt>figure{width: 100%; text-align: center;margin: 15px;}
+ .ct_top>.map_txt>figure>img{display: block; width: 65%; margin: 0 auto; }
+ .ct_top>.map_txt>figure>figcaption{font-size: 15px; font-weight: 500;height:50px; line-height: 50px;}
